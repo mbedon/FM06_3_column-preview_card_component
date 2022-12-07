@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    /* PRIMARY */
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    /* NEUTRAL */
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+
+    /* PRIMARY FONT & SIZE */
+    font-family: "Lexend Deca";
+    font-weight: 400;
+    font-size: 15px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--Very-light-gray);
+}
+main {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    margin: 200px auto;
+}
+
+section {
+    padding: 50px 50px 50px 40px;
+}
+
+.sedans {
+    background-color: var(--Bright-orange);
+}
+
+.suvs {
+    background-color: var(--Dark-cyan);
+}
+
+.luxury {
+    background-color: var(--Very-dark-cyan);
+}
+
+.car-type {
+    font-family: "Big Shoulders Display";
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    
+    font-size: 2.5rem;
+    color: var(--Very-light-gray);
+    margin: 30px 0;
+}
+
+.type-description {
+    color: var(--Transparent-white);
+    line-height: 1.6rem;
+    margin-bottom: 75px;
+}
+
+.learn-more {
+    font-size: 1.1rem;
+    font-weight: bold;
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: hsl(0, 0%, 95%, 1);
+    border: 2px solid var(--Very-light-gray);
+}
+
+.sedans .learn-more {
+    color: var(--Bright-orange);
+}
+
+.suvs .learn-more {
+    color: var(--Dark-cyan);
+}
+
+.luxury .learn-more {
+    color: var(--Very-dark-cyan);
+}
+
+.learn-more:hover {
+    color: var(--Very-light-gray);
+    background-color: hsl(0, 0%, 95%, 0);
+    cursor: pointer;
+}
+
+@media (max-width: 920px){
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 100px auto;
+    }
+
+    section {
+        padding: 40px 40px 40px 30px;
+    }
+
+    .type-description {
+        margin-bottom: 30px;
+    }
+}
